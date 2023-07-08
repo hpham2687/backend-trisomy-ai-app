@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+numpy
+pydantic
+typing
+lightgbm
+catboost
+xgboost

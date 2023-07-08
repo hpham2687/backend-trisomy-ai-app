@@ -24,23 +24,7 @@ class Model_input_trisomy(BaseModel):
     t_mom_ue3:Optional[float]=None
     t_mom_afp:Optional[float]=None
     t_mom_hcg:Optional[float]=None
-class Model_input_12(BaseModel):
-    ctm_rbc:Optional[float]=None 
-    ctm_hgb:Optional[float]=None
-    ctm_hct:Optional[float]=None
-    ctm_mcv:Optional[float]=None
-    ctm_mch:Optional[float]=None
-    ctm_mchc:Optional[float]=None
-    ctm_rdw:Optional[float]=None
-    ctm_sathuyetthanh:Optional[float]=None
-    ctm_ferritinehuyetthanh:Optional[float]=None
-    dd_hba1:Optional[float]=None
-    dd_hba2:Optional[float]=None
-    dd_hbe:Optional[float]=None
-    dd_hbh:Optional[float]=None
-    dd_hbbar:Optional[float]=None
-    dd_hbkhac:Optional[float]=None
-    dd_hbf:Optional[float]=None
+ 
 class NumpyEncoder(json.JSONEncoder):
     def default(self, obj):
         if isinstance(obj, np.ndarray):
