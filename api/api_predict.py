@@ -5,7 +5,7 @@ from utils import Model_input_trisomy
 app=FastAPI()
   
 @app.get('/')
-def trisomy():
+def trisomyTest():
     return "Running"
 
 @app.post('/trisomy_predict')
@@ -54,5 +54,5 @@ def trisomy(input_param:Model_input_trisomy):
     else:
         return
 if __name__ == "__main__":
-    uvicorn.run(app, host="localhost",port=23)
+    uvicorn.run(app, host="0.0.0.0",port=23)
     # uvicorn.run(app, host="103.179.191.178",port=23)
